@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="forum.css">
+  <title>Add a Topic</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" <div id="image">
+      <img src="LOGO.jpg" alt="ischool logo">
+    </div>
+    <div align="center">
+      <a href="https://ischool.umd.edu/news">
+        <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" loop="7" scrollamount="3" scrolldelay="2" width="100%">
+          <span style="font-size: 20px;color:#FFFFFF">
+            Latest iSchool News! Click Here</span></marquee>
+      </a>
+    </div>
+    <div class="topnav">
+      <a href="https://ischool.umd.edu"><button type="submit" class="button">Home</button></a>
+      <a href="https://ischool.umd.edu/about-ischool"><button type="submit" class="button">About</button></a>
+      <a href="https://ischool.umd.edu/contact-follow-us"><button type="submit" class="button">Contact</button></a>
+
+
+    </div>
+  </div>
+  <img src="studo.jpg" alt="testudo" width="350px" height="300px" align="right">
+  <div class="first-column" <div id="id1">
+    <h1><u>iSchool Official Forum</u></h1>
+  </div>
+  <div class="wrapper">
+
+
+
+    <div class="btn-group">
+
+
+      <div class="dropdown">
+        <button class="dropbtn">Filter by</button>
+        <div class="dropdown-content">
+          <a href="#">Today</a>
+          <a href="#">Past Week</a>
+          <a href="#">Past Month</a>
+          <a href="#">View All</a>
+
+        </div>
+      </div>
+
+      <div class="button_post">
+        <button class="button_post"><span> New Post </span></button>
+
+      </div>
+
+    </div>
+
+    <table id="myTable">
+
+      <th class="forum-topicsview-header" colspan="5"> Discussion Board </th>
+      <tr>
+        <th class=""> </th>
+        <th class="" style="text-align: left;"> Topics </th>
+        <th class="forum-topics-col-views"> Replies </th>
+        <th class="forum-topics-col-views"> Upvotes </th>
+        <th class="forum-topics-col-lastpost"> Post info </th>
+      </tr>
+
+
+
+      <tr class="forum-topicview-row">
+
+
+        <td class="forum-topics-col-icon"> <i class="material-icons">forum</i> </td>
+        <td class="single-post"> <a href="#">
+            <p>the first number one </p>
+          </a> </td>
+        <td class="forum-topics-col-views"> 1 </td>
+        <td class="forum-topics-col-views"> 5 </td>
+        <td class="forum-topics-col-lastpost">
+          <p>Posted by: UserName<br><b>July 10 2016</b></p>
+        </td>
+      </tr>
+
+
+      <tr class="forum-topicview-row">
+        <td class="forum-topics-col-icon"> <i class="material-icons">forum</i> </td>
+        <td class="single-post"> <a href="#">
+            <p>the second post</p>
+          </a> </td>
+        <td class="forum-topics-col-views"> 3 </td>
+        <td class="forum-topics-col-views"> 156 </td>
+        <td class="forum-topics-col-lastpost">
+          <p> posted by: UserName<br><b>July 09 2016</b></p>
+        </td>
+      </tr>
+
+    </table>
+
+    <div class="button_more">
+      <button class="button_more" style="vertical-align:middle"><span>More Posts </span></button>
+
+    </div>
+
+
+  </div>
+
+  <form method=post action="forum.php">
+    <p><strong>University Status:</strong>
+      <select name="status">
+        <option value="under">Undergrad Student</option>
+        <option value="grad">Grad Student</option>
+        <option value="prof">Professor/Lecturer</option>
+        <option value="none">None</option>
+      </select>
+      <p><strong>Username:</strong><br>
+        <input type="text" name="topic_owner" size=40 maxlength=150>
+        <p><strong>Topic Title:</strong><br>
+          <input type="text" name="topic_title" size=40 maxlength=150>
+          <P><strong>Post Text:</strong><br>
+            <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea></br>
+            <!--<P><input type="submit" name="submit" value="Add Topic"></p> -->
+            <form><input type="button" onclick="location.href='forum3.html'" value="Add Topic" /></form>
+
+  </form>
+</body>
+
+</html>

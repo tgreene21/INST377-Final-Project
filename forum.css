@@ -1,0 +1,347 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+  background-color: firebrick;
+}
+#image {
+  background-color: white;
+}
+#id1 {
+	 background-color: white;
+    width: 600px;
+	  font-family: serif;
+    border: 4px solid firebrick;
+	  font-weight: bold;
+	  font-size: 1.2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.button {
+  background-color: firebrick;
+  border-color: #AB2F15;
+  border-radius: 5px;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ff9800;
+  color: white;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.dropbtn {
+  background-color: #B22222;
+  border-radius: 5px;
+
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+
+}
+
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+
+  width: 10%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #696969;}
+
+
+/* -------------------------------------------- */
+/*            Add post button            */
+/* -------------------------------------------- */
+
+
+.button_post {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #B22222;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float:right;
+}
+
+.button_post span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_post span:after {
+  content: '\002B';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_post:hover span {
+  padding-right: 25px;
+}
+
+.button_post:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* -------------------------------------------- */
+/*            button_more post button            */
+/* -------------------------------------------- */
+
+.button_more {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #B22222;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float:right;
+}
+
+.button_more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_more span:after {
+  content: '\279C';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_more:hover span {
+  padding-right: 25px;
+}
+
+.button_more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* -------------------------------------------- */
+/*           styling of webpage             */
+/* -------------------------------------------- */
+
+input:focus {
+	outline:none;
+}
+
+
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {line-height: inherit;}
+
+body {
+  background: #FFFFFF;
+  min-height: 100%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  }
+
+/* -------------------------------------------- */
+/*            material design icons             */
+/* -------------------------------------------- */
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: inherit;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  cursor: default;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+/* -------------------------------------------- */
+/*       styling table for the discussion board */
+/* -------------------------------------------- */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 100px auto;
+}
+
+
+
+.single-post:hover{
+  background-color: 778899;
+}
+
+.single-post span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.single-post span:after {
+  content: '\002B';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.single-post:hover span {
+  padding-right: 25px;
+}
+
+.single-post:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+th {
+  border-bottom: 1px solid #FFFFFF;
+
+
+	background: #B22222;
+	padding: 15px;
+	color: #FFFFFF;
+}
+
+
+
+
+.forum-topicview-row {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+td {
+
+	background: #A9A9A9;
+	padding: 12px;
+	color: #FFFFFF;
+}
+
+.forum-topicsview-header {
+	background-color: #2F4F4F;
+	color: #FFF;
+}
+
+.forum-topics-col-views {
+	width: 70px;
+	text-align: center;
+}
+
+
+.forum-topics-col-icon {
+	width: 70px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.forum-topics-col-lastpost {
+	width: 200px;
+	text-align: center;
+}
+
+.forum-topics-col-lastpost p {
+		font-size: 12px;
+		color: #FFFFFF;
+}
