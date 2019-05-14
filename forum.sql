@@ -5,7 +5,7 @@ USE `forum`;
 DROP TABLE IF EXISTS `forum`.`Questions` ;
 
 CREATE TABLE IF NOT EXISTS `forum`.`Questions` (
-  `questionsID` INT NOT NULL,
+  `questionsID` INT NOT NULL AUTO_INCREMENT,
   `universityStatus` VARCHAR(45) NULL,
   `userName` VARCHAR(45) NULL,
   `questionTitle` VARCHAR(45) NULL,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `forum`.`Questions` (
 DROP TABLE IF EXISTS `forum`.`Answers` ;
 
 CREATE TABLE IF NOT EXISTS `forum`.`Answers` (
-  `answerID` INT NOT NULL,
+  `answerID` INT NOT NULL AUTO_INCREMENT,
   `answer` TEXT NULL,
   `questionsID` INT NOT NULL,
   PRIMARY KEY (`answerID`)
